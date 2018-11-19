@@ -1,10 +1,10 @@
 # Wikipedia Matrix (benchmark)
 
 Extracting Wikipedia tables into CSV files (basic skeleton for testing/benchmarking solutions). Once the git is cloned:
-`
+```
 cd wikimatrix 
 mvn test
-`
+``` 
 
 We give 300+ Wikipedia URLs and the challenge is to:
  * integrate the extractors' code (HTML and Wikitext)
