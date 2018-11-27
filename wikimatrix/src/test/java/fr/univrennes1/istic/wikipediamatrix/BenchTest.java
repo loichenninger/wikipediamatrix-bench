@@ -24,7 +24,7 @@ public class BenchTest {
 		String outputDirHtml = "output" + File.separator + "html" + File.separator;
 		assertTrue(new File(outputDirHtml).isDirectory());
 		// directory where CSV files are exported (Wikitext extractor) 
-		String outputDirWikitext = "output" + File.separator + "html" + File.separator;
+		String outputDirWikitext = "output" + File.separator + "wikitext" + File.separator;
 		assertTrue(new File(outputDirWikitext).isDirectory());
 		
 		File file = new File("inputdata" + File.separator + "wikiurls.txt");
