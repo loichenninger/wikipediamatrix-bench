@@ -13,15 +13,21 @@ public class App
 {
 	public static void main( String[] args ) throws IOException
 	{
-		String url="Comparison_of_Norwegian_Bokmål_and_Standard_Danish";
+		String url="Comparison_of_browser_synchronizers";
 		Url chemin = new Url();
 		chemin.setChemin("https://en.wikipedia.org/wiki/"+url);
 		System.out.println(chemin.estValide());
-//		Html pageCanon = new Html();
-//		pageCanon.init("https://en.wikipedia.org/wiki/"+url);
-//		pageCanon.extractTableaux();
+		Html page = new Html();
+		page.init("https://en.wikipedia.org/wiki/"+url);
+		Elements lignesHtml =page.codeSource.getElementsByClass("wikitable sortable").get(0).select("tr");
+		int i=1;
+		for (Element ligneHtml : lignesHtml) {
+			System.out.println("Ligne "+i);
+			System.out.println(ligneHtml);
+			i++;
+		}
 //		int i = 1;
-//		for (Tableau tab : pageCanon.getTableaux()) {
+//		for (Tableau tab : page.getTableaux()) {
 //			String csvFileName = mkCSVFileName(url,i);
 //			tab.genererCSV("output/html/"+csvFileName);
 //			i++;

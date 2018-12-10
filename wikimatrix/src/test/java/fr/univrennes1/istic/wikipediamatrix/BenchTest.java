@@ -51,6 +51,7 @@ public class BenchTest {
 				int i = 1;
 				for (Tableau tab : page.getTableaux()) {
 					String csvFileName = mkCSVFileName(url,i);
+					System.out.println("Wikipedia url: " + wurl);
 					tab.genererCSV("output/html/"+csvFileName);
 					i++;
 				}
