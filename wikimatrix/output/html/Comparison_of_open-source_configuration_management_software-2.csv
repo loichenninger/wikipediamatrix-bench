@@ -1,0 +1,22 @@
+"",AIX,*BSD,HP-UX,Linux,OS X,Solaris,Windows,Others
+Ansible,Yes,Yes,Yes,Yes,Yes,Yes,Yes (Need linux control machine),Yes[97]
+Bcfg2,Partial[98],Yes[99],No,Yes[100],Partial[101],Yes,No,No
+CFEngine,Yes,Yes[99],Yes,Yes,No,Yes,Yes,Yes[102]
+cdist,,Yes,,Yes,Yes,,No,
+Chef,Yes[103],Yes,Yes,Yes,Yes,Yes,Yes[104],Yes
+ISconf,Yes,Yes,Yes,Yes,Yes,Yes,No,No
+Juju,,,,Yes,,,Yes[105],
+Local ConFiGuration system (LCFG),No,No,No,Partial[106],Partial[107],Partial[108],No,No
+OCS Inventory NG,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No
+Open pc server integration (Opsi),No,No,No,Yes,No,No,Yes,No
+PIKT,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes[109]
+Puppet,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+Quattor,No,No,No,Yes,Partial[110],Yes,No,No
+Radmind,Yes,Yes[99][111][112],No,Yes,Yes,Yes,Yes,No
+Rex,,Yes,,Yes,Yes[113],Yes,Yes[113],No
+Rudder,Yes,Partial[114],No,Yes,Partial[114],Partial[115],Yes,Yes[116]
+SmartFrog,No[117],No[117],Yes,Yes,Yes,Yes,Yes,No[117]
+Salt,Yes,Yes,Partial[118],Yes[119],Yes,Yes[120],Yes,Partial[118]
+Spacewalk,No[121],No,No,Yes[122],No,Yes[123],No,No
+STAF,Yes[124],Yes[125],Yes[126],Yes[127],Yes[128],Yes[129],Yes[130],Yes[131]
+Synctool,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes[132]
