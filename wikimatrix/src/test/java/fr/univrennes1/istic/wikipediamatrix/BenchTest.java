@@ -6,6 +6,10 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
@@ -41,6 +45,10 @@ public class BenchTest {
 		String url;
 		
 		int nbTableaux = 0;
+		List<String> motsEntete = new ArrayList<String>();
+		int freqMax = 0;
+		String motLePlusFrequent="";
+		
 		
 		int nurl = 0;
 		while ((url = br.readLine()) != null) {
@@ -69,7 +77,9 @@ public class BenchTest {
 						//On teste que l'entête les enregistrements sont non vides
 						assertNotNull(parser.getHeaderMap().size());
 						assertNotNull(parser.getRecords().size());
-						//
+						for (String mapKey : parser.getHeaderMap().keySet()) {
+							motsEntete.add(mapKey);
+						}
 						
 					} catch (Exception e) {
 						System.out.println(e);
@@ -94,6 +104,7 @@ public class BenchTest {
 
 			}
 			nurl++;
+			
 		}
 		//		for (int i=0;i<10;i++) {
 		//			url = br.readLine();
@@ -109,8 +120,16 @@ public class BenchTest {
 		br.close();	    
 		assertEquals(nurl, 336);
 		System.out.println(nbTableaux);
-
-
+		//On compte l'entête apparaissant le plus de fois
+		for (String mot : motsEntete) {
+			int freqCour;
+			freqCour=Collections.frequency(motsEntete, mot);
+			if (freqCour>freqMax) {
+				freqMax=freqCour;
+				motLePlusFrequent=mot;
+			}
+		}
+		System.out.println("Mot le plus fréquent : "+motLePlusFrequent+" ("+freqMax+" fois)");
 
 	}
 	
