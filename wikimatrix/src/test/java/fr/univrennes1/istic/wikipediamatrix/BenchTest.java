@@ -5,7 +5,10 @@ import static org.junit.Assert.*;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.io.IOException;
 
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
 import org.junit.Test;
 
 /**
@@ -36,6 +39,9 @@ public class BenchTest {
 		File file = new File("inputdata" + File.separator + "wikiurls.txt");
 		BufferedReader br = new BufferedReader(new FileReader(file));
 		String url;
+		
+		int nbTableaux = 0;
+		
 		int nurl = 0;
 		while ((url = br.readLine()) != null) {
 			String wurl = BASE_WIKIPEDIA_URL + url; 
@@ -45,7 +51,7 @@ public class BenchTest {
 			Url chemin = new Url();
 			chemin.setChemin(wurl);
 			if (chemin.estValide()) {
-				Html page = new Html();
+				Extractor page = new Extractor();
 				page.init(wurl);
 				page.extractTableaux();
 				int i = 1;
@@ -53,6 +59,21 @@ public class BenchTest {
 					String csvFileName = mkCSVFileName(url,i);
 					System.out.println("Wikipedia url: " + wurl);
 					tab.genererCSV("output/html/"+csvFileName);
+					nbTableaux++;
+					FileReader reader = new FileReader("output/html/"+csvFileName);
+					assertNotNull(reader);
+					try {
+						CSVParser parser = new CSVParser(reader, CSVFormat.DEFAULT.withFirstRecordAsHeader());
+						//On teste que le tableau extrait est non vide
+						assertNotNull(parser);
+						//On teste que l'entête les enregistrements sont non vides
+						assertNotNull(parser.getHeaderMap().size());
+						assertNotNull(parser.getRecords().size());
+						//
+						
+					} catch (Exception e) {
+						System.out.println(e);
+					}					
 					i++;
 				}
 
@@ -72,7 +93,7 @@ public class BenchTest {
 				// see outputDirWikitext   
 
 			}
-			nurl++;	       
+			nurl++;
 		}
 		//		for (int i=0;i<10;i++) {
 		//			url = br.readLine();
@@ -87,11 +108,12 @@ public class BenchTest {
 
 		br.close();	    
 		assertEquals(nurl, 336);
-
+		System.out.println(nbTableaux);
 
 
 
 	}
+	
 
 	private String mkCSVFileName(String url, int n) {
 		return url.trim() + "-" + n + ".csv";

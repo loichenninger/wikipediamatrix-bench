@@ -17,7 +17,7 @@ public class App
 		Url chemin = new Url();
 		chemin.setChemin("https://en.wikipedia.org/wiki/"+url);
 		System.out.println(chemin.estValide());
-		Html page = new Html();
+		Extractor page = new Extractor();
 		page.init("https://en.wikipedia.org/wiki/"+url);
 		Elements lignesHtml =page.codeSource.getElementsByClass("wikitable sortable").get(0).select("tr");
 		int i=1;
