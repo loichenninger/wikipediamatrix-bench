@@ -40,7 +40,7 @@ public class BenchTest {
 		String outputDirWikitext = "output" + File.separator + "wikitext" + File.separator;
 		assertTrue(new File(outputDirWikitext).isDirectory());
 
-		File file = new File("inputdata" + File.separator + "wikiurls.txt");
+		File file = new File("inputdata" + File.separator + "wikitest.txt");
 		BufferedReader br = new BufferedReader(new FileReader(file));
 		String url;
 		
@@ -48,6 +48,8 @@ public class BenchTest {
 		List<String> motsEntete = new ArrayList<String>();
 		int freqMax = 0;
 		String motLePlusFrequent="";
+		List<Integer> nbColonnes = new ArrayList<Integer>();
+		List<Integer> nbLignes = new ArrayList<Integer>();
 		
 		
 		int nurl = 0;
@@ -80,6 +82,8 @@ public class BenchTest {
 						for (String mapKey : parser.getHeaderMap().keySet()) {
 							motsEntete.add(mapKey);
 						}
+						//On ajoute enregistre dans une List le nombre de lignes et de colonnes
+						nbColonnes.add(parser.getHeaderMap().size());
 						
 					} catch (Exception e) {
 						System.out.println(e);
@@ -87,38 +91,12 @@ public class BenchTest {
 					i++;
 				}
 
-				// for exporting to CSV files, we will use mkCSVFileName 
-				// example: for https://en.wikipedia.org/wiki/Comparison_of_operating_system_kernels
-				// the *first* extracted table will be exported to a CSV file called 
-				// "Comparison_of_operating_system_kernels-1.csv"
-
-				// the *second* (if any) will be exported to a CSV file called
-				// "Comparison_of_operating_system_kernels-2.csv"
-
-
-				// TODO: the HTML extractor should save CSV files into output/HTML
-				// see outputDirHtml 
-
-				// TODO: the Wikitext extractor should save CSV files into output/wikitext
-				// see outputDirWikitext   
-
 			}
 			nurl++;
 			
 		}
-		//		for (int i=0;i<10;i++) {
-		//			url = br.readLine();
-		//			String wurl = BASE_WIKIPEDIA_URL + url;
-		//			System.out.println("Wikipedia url: " + wurl);
-		//			Html page = new Html();
-		//			page.init(wurl);
-		//			Tableau tab = page.getTableau(0);
-		//			String csvFileName = mkCSVFileName(url,1);
-		//			tab.genererCSV("output/html/"+csvFileName);
-		//		}
-
 		br.close();	    
-		assertEquals(nurl, 336);
+		assertEquals(nurl, 10);
 		System.out.println(nbTableaux);
 		//On compte l'entête apparaissant le plus de fois
 		for (String mot : motsEntete) {
@@ -130,12 +108,35 @@ public class BenchTest {
 			}
 		}
 		System.out.println("Mot le plus fréquent : "+motLePlusFrequent+" ("+freqMax+" fois)");
-
+		System.out.println("Statistiques sur les colonnes :");
+		System.out.println("Nombre de colonnes minimum :"+Collections.min(nbColonnes));
+		System.out.println("Nombre de colonnes maximum :"+Collections.max(nbColonnes));
+		System.out.println("Nombre de colonnes moyen :"+calculeMoyenne(nbColonnes));
+		System.out.println("Ecart-type:"+ecartType(nbColonnes));
 	}
 	
 
 	private String mkCSVFileName(String url, int n) {
 		return url.trim() + "-" + n + ".csv";
 	}
+	
+	private double calculeMoyenne (List<Integer> lsNombres) {
+		int total=0;
+		for (Integer nbCourant : lsNombres) {
+			total+=nbCourant;
+		}
+		return (double) total/lsNombres.size();
+	}
+	
+	private double ecartType (List<Integer> lsNombres) {
+		double sommeErreurCarre=0;
+		double moyenne=calculeMoyenne(lsNombres);
+		System.out.println(moyenne);
+		for (Integer nbCourant : lsNombres) {
+			sommeErreurCarre+=Math.pow((nbCourant-moyenne), 2);
+		}
+		return Math.sqrt(sommeErreurCarre/lsNombres.size());
+	}
+	
 
 }
