@@ -13,6 +13,7 @@ import java.util.Map;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
+import org.apache.commons.csv.CSVRecord;
 import org.junit.Test;
 
 /**
@@ -50,6 +51,7 @@ public class BenchTest {
 		String motLePlusFrequent="";
 		List<Integer> nbColonnes = new ArrayList<Integer>();
 		List<Integer> nbLignes = new ArrayList<Integer>();
+		List<Integer> nbCellules = new ArrayList<Integer>();
 		
 		
 		int nurl = 0;
@@ -74,16 +76,27 @@ public class BenchTest {
 					assertNotNull(reader);
 					try {
 						CSVParser parser = new CSVParser(reader, CSVFormat.DEFAULT.withFirstRecordAsHeader());
+						List<CSVRecord> lsEnregistrements = parser.getRecords();
 						//On teste que le tableau extrait est non vide
 						assertNotNull(parser);
 						//On teste que l'entête les enregistrements sont non vides
-						assertNotNull(parser.getHeaderMap().size());
-						assertNotNull(parser.getRecords().size());
+						assertNotNull(parser.getHeaderMap());
+						assertNotNull(lsEnregistrements);
 						for (String mapKey : parser.getHeaderMap().keySet()) {
 							motsEntete.add(mapKey);
 						}
 						//On ajoute enregistre dans une List le nombre de lignes et de colonnes
 						nbColonnes.add(parser.getHeaderMap().size());
+						nbLignes.add(lsEnregistrements.size());
+						int nbCellulesTab=0;
+						//On compte désormais le nombre de cellules
+						for (CSVRecord enregistrement : lsEnregistrements) {
+							nbCellulesTab+=enregistrement.size();
+						}
+						//On ajoute les cellules de l'entete
+						nbCellulesTab+=parser.getHeaderMap().size();
+						System.out.println(nbCellulesTab);
+						nbCellules.add(nbCellulesTab);
 						
 					} catch (Exception e) {
 						System.out.println(e);
@@ -109,10 +122,11 @@ public class BenchTest {
 		}
 		System.out.println("Mot le plus fréquent : "+motLePlusFrequent+" ("+freqMax+" fois)");
 		System.out.println("Statistiques sur les colonnes :");
-		System.out.println("Nombre de colonnes minimum :"+Collections.min(nbColonnes));
-		System.out.println("Nombre de colonnes maximum :"+Collections.max(nbColonnes));
-		System.out.println("Nombre de colonnes moyen :"+calculeMoyenne(nbColonnes));
-		System.out.println("Ecart-type:"+ecartType(nbColonnes));
+		statistiques(nbColonnes);
+		System.out.println("Statistiques sur les lignes :");
+		statistiques(nbLignes);
+		System.out.println("Statistiques sur les cellules :");
+		statistiques(nbCellules);
 	}
 	
 
@@ -131,12 +145,17 @@ public class BenchTest {
 	private double ecartType (List<Integer> lsNombres) {
 		double sommeErreurCarre=0;
 		double moyenne=calculeMoyenne(lsNombres);
-		System.out.println(moyenne);
 		for (Integer nbCourant : lsNombres) {
 			sommeErreurCarre+=Math.pow((nbCourant-moyenne), 2);
 		}
 		return Math.sqrt(sommeErreurCarre/lsNombres.size());
 	}
 	
+	private void statistiques (List<Integer> lsNombres) {
+		System.out.println("Minimum :"+Collections.min(lsNombres));
+		System.out.println("Maximum :"+Collections.max(lsNombres));
+		System.out.println("Moyenne :"+calculeMoyenne(lsNombres));
+		System.out.println("Ecart-type :"+ecartType(lsNombres));
+	}
 
 }
