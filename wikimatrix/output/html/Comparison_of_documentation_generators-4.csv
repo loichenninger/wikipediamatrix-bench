@@ -11,6 +11,7 @@ JSDoc,No,No,No,No,Yes,No,No,No,No,No
 JsDoc Toolkit,No,No,No,No,Yes,No,No,No,No,No
 Natural Docs,Partial,Yes,Partial,Partial,Partial,Yes,Partial,No,Partial,No
 NDoc,No,No,No,No,No,No,No,No,No,No
+pdoc,No,No,Yes,No,No,No,No,No,No,No
 perldoc,No,Yes,No,No,No,No,No,No,No,No
 phpDocumentor,Yes,No,No,No,No,No,No,No,No,No
 pydoc,No,No,Yes,No,No,No,No,No,No,No

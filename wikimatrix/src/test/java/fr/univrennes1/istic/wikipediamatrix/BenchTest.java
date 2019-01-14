@@ -41,7 +41,7 @@ public class BenchTest {
 		String outputDirWikitext = "output" + File.separator + "wikitext" + File.separator;
 		assertTrue(new File(outputDirWikitext).isDirectory());
 
-		File file = new File("inputdata" + File.separator + "wikitest.txt");
+		File file = new File("inputdata" + File.separator + "wikiurls.txt");
 		BufferedReader br = new BufferedReader(new FileReader(file));
 		String url;
 		
@@ -65,8 +65,11 @@ public class BenchTest {
 			if (chemin.estValide()) {
 				Extractor page = new Extractor();
 				page.init(wurl);
+				//On extrait tous les tableaux valides présents sur la page
 				page.extractTableaux();
 				int i = 1;
+				//On parcourt tous les tableaux extraits et on les transforme en csv, puis on teste le csv et on enregistre
+				//les caractéristiques du tableau (nb de lignes, nb de colonnes et nb de cellules)
 				for (Tableau tab : page.getTableaux()) {
 					String csvFileName = mkCSVFileName(url,i);
 					System.out.println("Wikipedia url: " + wurl);
@@ -109,7 +112,7 @@ public class BenchTest {
 			
 		}
 		br.close();	    
-		assertEquals(nurl, 10);
+		assertEquals(nurl, 336);
 		System.out.println(nbTableaux);
 		//On compte l'entête apparaissant le plus de fois
 		for (String mot : motsEntete) {

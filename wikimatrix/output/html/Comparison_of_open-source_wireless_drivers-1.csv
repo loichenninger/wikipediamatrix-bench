@@ -2,7 +2,7 @@ Driver family,Driver,Chipsets,Chipset PHY Modes,Integration in mainline,Non-free
 adm8211,adm8211,ADMtek ADM8211 (IEEE 802.11b MAC/BBP,?,Yes,Yes,GPLv2,With support from Infineon/ADMtek
 at76c50x‑usb at76c50x‑usb,at76c50x-USB,Atmel AT76C503/AT76C505 based USB WLAN adapters,?,Yes,Depends on the model,GPLv2,?
 "",acx100,"Texas Instruments ACX100, ACX111, TNETW1450",?,No,Yes,Dual BSD/MPL,Reverse-engineered
-airo,airo,Cisco Systems Aironet 4500/4800 and 340/350,?,Yes,No,Dual GPLv2 and BSD,?
+airo,airo,Cisco Systems Aironet 4500/4800 and 340/350,b,Yes,No,Dual GPLv2 and BSD,?
 ath,ar5523,Qualcomm Atheros AR5523 based USB dongles,?,Yes,Yes,ISC,Reverse-engineered
 ath5k,"Qualcomm Atheros AR2413, AR2414, AR2417, AR2425, AR5210, AR5211, AR5212, AR5213, AR5413, AR5414, AR5423, AR5424",?,Yes (since 2.6.25),N/A[3],Dual GPL/BSD,Reverse-engineered
 ath6kl,"Qualcomm Atheros AR6003, AR6004 (SDIO), AR6004 (USB)",?,Yes,Yes,ISC,Written by Qualcomm Atheros
@@ -30,14 +30,14 @@ mwl8k,mwl8k,"Marvell TOPDOG 802.11 Wireless cards: 88W8366, 88W8863, 88W8687, 88
 orinoco,orinoco,"Lucent Hermes (WaveLAN/ ORiNOCO); Intersil PRISM-II, PRISM-2.5; Symbol Spectrum24 802.11B",?,Yes,Required for WPA support[18],,
 p54,p54,,?,Yes,Yes[19],,
 prism54,prism54,,?,Yes,,,Reverse-engineered; obsoleted by p54.
-rt2x00,rt2400pci,MediaTek (Ralink) RT2460,?,Yes (since 2.6.24),No[20],GPLv2+,rt2x00.serialmonkey.com; From partial documentation and GPL drivers by Ralink
-rt2500pci,RT2560,?,Yes,No,GPLv2+,rt2x00.serialmonkey.com
+rt2x00,rt2400pci,MediaTek (Ralink) RT2460,b,Yes (since 2.6.24),No[20],GPLv2+,rt2x00.serialmonkey.com; From partial documentation and GPL drivers by Ralink
+rt2500pci,RT2560,b/g,Yes,No,GPLv2+,rt2x00.serialmonkey.com
 rt61pci,"RT2561, RT2561S, RT2661",?,Yes,Yes,GPLv2+,rt2x00.serialmonkey.com
 rt2800pci,"RT2760, RT2790, RT2860, RT2880, RT2890, RT3052, RT3090, RT3091, RT3092 RT3390, RT3060, RT3062, RT3562, RT3592, RT5390, RT3290",?,Yes,Yes,GPLv2+,rt2x00.serialmonkey.com
-rt2500usb,RT2571 & RT2572,?,Yes,No,GPLv2+,rt2x00.serialmonkey.com
+rt2500usb,RT2571 & RT2572,b/g,Yes,No,GPLv2+,rt2x00.serialmonkey.com
 rt73usb,"RT2571W, RT2573 & RT2671",?,Yes,Yes,GPLv2+,rt2x00.serialmonkey.com
 rt2800usb,"RT2770, RT2870 & RT3070, RT3071 & RT3072 RT3370, RT3572, RT5370, RT5572",?,Yes,Yes,GPLv2+,rt2x00.serialmonkey.com
-rtl818x,rtl8180,"RTL8180, RTL8185, RTL8187SE",?,Yes,No,GPL,
+rtl818x,rtl8180,"RTL8180, RTL8185, RTL8187SE",b/g,Yes,No,GPL,
 rtl8187,"RTL8187, RTL8187B",a/b/g,Yes,No,GPL,
 rtlwifi rtl‑wifi,rtl8188ee,Realtek,?,Yes (since 2.6.38)[21],Yes,GPL,Written by Realtek et al. Forked from rtl8180-sa2400 project.
 rtl8192c,,?,Yes,,GPL,Written by Realtek et al.

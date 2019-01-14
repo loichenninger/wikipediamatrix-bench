@@ -49,7 +49,7 @@ naim,Daniel Reed,1998-10-05,Multi-protocol,"0.11.8.3.1 (July 9, 2007; 11 years a
 Nimbuzz,Evert Jaap Lugt,2006,Multi-protocol,Android: 7.0.1 (5 October 2018; 3 months ago (2018-10-05)) [±][12] iOS: 5.11.0 (1 February 2018; 11 months ago (2018-02-01)) [±][13] BlackBerry OS: 4.0 (10 December 2013; 5 years ago (2013-12-10)) [±][14] Windows Phone: 1.1.8.1 (16 April 2014; 4 years ago (2014-04-16)) [±][15],Freeware
 Palringo,Palringo Ltd,2006,Single-protocol,"Windows: 2.7.9 (July 4, 2012; 6 years ago (2012-07-04)) Windows Mobile: 2.6.6 (March 30, 2012; 6 years ago (2012-03-30)) iOS: 4.12 (August 6, 2012; 6 years ago (2012-08-06)) Android: 5.2.8 (August 1, 2012; 6 years ago (2012-08-01)) OS X: 4.6.4 (July 24, 2012; 6 years ago (2012-07-24)) Windows Phone: 0.11.0.0 (February 14, 2012; 6 years ago (2012-02-14))",Freemium
 Paltalk,,1998-06,Multi-protocol,Version 10.2 Build 455,Freeware
-Pidgin,Mark Spencer,1998-11,Multi-protocol,"2.13.0 (March 8, 2018; 9 months ago (2018-03-08)[16]) [±]",GPL
+Pidgin,Mark Spencer,1998-11,Multi-protocol,"2.13.0 (March 8, 2018; 10 months ago (2018-03-08)[16]) [±]",GPL
 Psi,Psi and Psi+ developers,2001,Single-protocol,"1.4 (November 2, 2018; 2 months ago (2018-11-02)) [±]",GPL
 Quiet Internet Pager (QIP),Ilgam Zyulkorneev,2004,Multi-protocol,QIP 2012 version 4.0 (build 8866) (27 November 2012; 6 years ago (2012-11-27)) [±],Freeware
 QuteCom,QuteCom,2004,Multi-protocol,2.2.1 (22 June 2011; 7 years ago (2011-06-22)[17]) [±],GPL
@@ -58,24 +58,24 @@ Ring,Savoir-faire Linux Inc.,2014,Single-protocol,20180509,GPLv3
 RingID,Ring Inc.,2015,Multi-protocol,"4.1.4 (Android, March 16, 2016; 2 years ago (2016-03-16))[19] 4.1.1.4 (Windows Phone, March 9, 2016; 2 years ago (2016-03-09))[20] 4.2.2 (iOS, March 19, 2016; 2 years ago (2016-03-19))[21]",Freeware
 Riot.im,New Vector Limited,2016-07,Single-protocol,"Android 0.8.18 (October 18, 2018; 2 months ago (2018-10-18)[22]) [±] iOS 0.7.5 (October 5, 2018; 3 months ago (2018-10-05)[23]) [±] Web (Desktop) 0.17.2 (October 19, 2018; 2 months ago (2018-10-19)[24]) [±]",Apache License
 Sicher,SHAPE GmbH,2014-06,Single-protocol,1.1,Freeware
-Signal,Open Whisper Systems,2014-07,Single-protocol,"Android 4.31.6 (December 13, 2018; 29 days ago (2018-12-13)[25]) [±] iOS 2.32.2 (December 21, 2018; 21 days ago (2018-12-21)[26]) [±] Desktop 1.19 (December 11, 2018; 31 days ago (2018-12-11)[27]) [±]",GPLv3
-Skype,"Windows, UWP","Windows, desktop",macOS,Linux,Android 6 and later,iOS & watchOS,"Skype Technologies, a subsidiary of Microsoft Corporation",2003,Single-protocol,"Windows, UWP 14.36.52.0 / 13 December 2018; 29 days ago (2018-12-13)[28] Windows, desktop 8.36.0.52 / 13 December 2018; 29 days ago (2018-12-13)[28] macOS 8.34.0.78 / 13 November 2018; 59 days ago (2018-11-13)[28] Linux 8.34.0.78 / 13 November 2018; 59 days ago (2018-11-13)[28] Android 6 and later 8.36.0.76 / 5 January 2019; 6 days ago (2019-01-05)[29] iOS & watchOS 8.35.0.71 / 3 December 2018; 39 days ago (2018-12-03)[29]",14.36.52.0 / 13 December 2018; 29 days ago (2018-12-13)[28],8.36.0.52 / 13 December 2018; 29 days ago (2018-12-13)[28],8.34.0.78 / 13 November 2018; 59 days ago (2018-11-13)[28],8.34.0.78 / 13 November 2018; 59 days ago (2018-11-13)[28],8.36.0.76 / 5 January 2019; 6 days ago (2019-01-05)[29],8.35.0.71 / 3 December 2018; 39 days ago (2018-12-03)[29],Freemium adware
-"Windows, UWP",14.36.52.0 / 13 December 2018; 29 days ago (2018-12-13)[28]
-"Windows, desktop",8.36.0.52 / 13 December 2018; 29 days ago (2018-12-13)[28]
-macOS,8.34.0.78 / 13 November 2018; 59 days ago (2018-11-13)[28]
-Linux,8.34.0.78 / 13 November 2018; 59 days ago (2018-11-13)[28]
-Android 6 and later,8.36.0.76 / 5 January 2019; 6 days ago (2019-01-05)[29]
-iOS & watchOS,8.35.0.71 / 3 December 2018; 39 days ago (2018-12-03)[29]
+Signal,Open Whisper Systems,2014-07,Single-protocol,"Android 4.31.6 (December 13, 2018; 30 days ago (2018-12-13)[25]) [±] iOS 2.32.2 (December 21, 2018; 22 days ago (2018-12-21)[26]) [±] Desktop 1.19 (December 11, 2018; 32 days ago (2018-12-11)[27]) [±]",GPLv3
+Skype,"Windows, UWP","Windows, desktop",macOS,Linux,Android 6 and later,iOS & watchOS,"Skype Technologies, a subsidiary of Microsoft Corporation",2003,Single-protocol,"Windows, UWP 14.36.52.0 / 13 December 2018; 30 days ago (2018-12-13)[28] Windows, desktop 8.36.0.52 / 13 December 2018; 30 days ago (2018-12-13)[28] macOS 8.34.0.78 / 13 November 2018; 60 days ago (2018-11-13)[28] Linux 8.34.0.78 / 13 November 2018; 60 days ago (2018-11-13)[28] Android 6 and later 8.36.0.76 / 5 January 2019; 7 days ago (2019-01-05)[29] iOS & watchOS 8.35.0.71 / 3 December 2018; 40 days ago (2018-12-03)[29]",14.36.52.0 / 13 December 2018; 30 days ago (2018-12-13)[28],8.36.0.52 / 13 December 2018; 30 days ago (2018-12-13)[28],8.34.0.78 / 13 November 2018; 60 days ago (2018-11-13)[28],8.34.0.78 / 13 November 2018; 60 days ago (2018-11-13)[28],8.36.0.76 / 5 January 2019; 7 days ago (2019-01-05)[29],8.35.0.71 / 3 December 2018; 40 days ago (2018-12-03)[29],Freemium adware
+"Windows, UWP",14.36.52.0 / 13 December 2018; 30 days ago (2018-12-13)[28]
+"Windows, desktop",8.36.0.52 / 13 December 2018; 30 days ago (2018-12-13)[28]
+macOS,8.34.0.78 / 13 November 2018; 60 days ago (2018-11-13)[28]
+Linux,8.34.0.78 / 13 November 2018; 60 days ago (2018-11-13)[28]
+Android 6 and later,8.36.0.76 / 5 January 2019; 7 days ago (2019-01-05)[29]
+iOS & watchOS,8.35.0.71 / 3 December 2018; 40 days ago (2018-12-03)[29]
 Spark (XMPP client),Ignite Realtime,2006-09,Single-protocol,"2.7.7 (April 24, 2016; 2 years ago (2016-04-24)) [±]",Apache License
 Surespot,Surespot LLC,2013,Single-protocol,"iOS 11 (September 24, 2015; 3 years ago (2015-09-24)[30]) [±] Android 63 (October 9, 2015; 3 years ago (2015-10-09)[31]) [±]",GPLv3
-Telegram,"Android, Original","Android, Telegram X","iOS, Original","iOS, Telegram X",Windows Phone,"Windows, macOS, Linux",macOS (Mac App Store version),Telegram Messenger LLP,2013,Single-protocol,"Android, Original 5.1.0 / 23 December 2018; 19 days ago (2018-12-23)[32] Android, Telegram X 0.21.3.1036 / 17 December 2018; 25 days ago (2018-12-17)[33] iOS, Original 5.1.1 / 23 December 2018; 19 days ago (2018-12-23)[34] iOS, Telegram X 5.0.17 / 13 November 2018; 59 days ago (2018-11-13)[35] Windows Phone 3.4.0 / 12 October 2018; 2 months ago (2018-10-12)[36] Windows, macOS, Linux 1.5.4 / 27 December 2018; 15 days ago (2018-12-27)[37] macOS (Mac App Store version) 4.8 / 29 December 2018; 13 days ago (2018-12-29)[38]",5.1.0 / 23 December 2018; 19 days ago (2018-12-23)[32],0.21.3.1036 / 17 December 2018; 25 days ago (2018-12-17)[33],5.1.1 / 23 December 2018; 19 days ago (2018-12-23)[34],5.0.17 / 13 November 2018; 59 days ago (2018-11-13)[35],3.4.0 / 12 October 2018; 2 months ago (2018-10-12)[36],1.5.4 / 27 December 2018; 15 days ago (2018-12-27)[37],4.8 / 29 December 2018; 13 days ago (2018-12-29)[38],"GPLv2, GPLv3[39]"
-"Android, Original",5.1.0 / 23 December 2018; 19 days ago (2018-12-23)[32]
-"Android, Telegram X",0.21.3.1036 / 17 December 2018; 25 days ago (2018-12-17)[33]
-"iOS, Original",5.1.1 / 23 December 2018; 19 days ago (2018-12-23)[34]
-"iOS, Telegram X",5.0.17 / 13 November 2018; 59 days ago (2018-11-13)[35]
+Telegram,"Android, Original","Android, Telegram X","iOS, Original","iOS, Telegram X",Windows Phone,"Windows, macOS, Linux",macOS (Mac App Store version),Telegram Messenger LLP,2013,Single-protocol,"Android, Original 5.1.0 / 23 December 2018; 20 days ago (2018-12-23)[32] Android, Telegram X 0.21.3.1036 / 17 December 2018; 26 days ago (2018-12-17)[33] iOS, Original 5.1.1 / 23 December 2018; 20 days ago (2018-12-23)[34] iOS, Telegram X 5.0.17 / 13 November 2018; 60 days ago (2018-11-13)[35] Windows Phone 3.4.0 / 12 October 2018; 2 months ago (2018-10-12)[36] Windows, macOS, Linux 1.5.4 / 27 December 2018; 16 days ago (2018-12-27)[37] macOS (Mac App Store version) 4.8 / 29 December 2018; 14 days ago (2018-12-29)[38]",5.1.0 / 23 December 2018; 20 days ago (2018-12-23)[32],0.21.3.1036 / 17 December 2018; 26 days ago (2018-12-17)[33],5.1.1 / 23 December 2018; 20 days ago (2018-12-23)[34],5.0.17 / 13 November 2018; 60 days ago (2018-11-13)[35],3.4.0 / 12 October 2018; 2 months ago (2018-10-12)[36],1.5.4 / 27 December 2018; 16 days ago (2018-12-27)[37],4.8 / 29 December 2018; 14 days ago (2018-12-29)[38],"GPLv2, GPLv3[39]"
+"Android, Original",5.1.0 / 23 December 2018; 20 days ago (2018-12-23)[32]
+"Android, Telegram X",0.21.3.1036 / 17 December 2018; 26 days ago (2018-12-17)[33]
+"iOS, Original",5.1.1 / 23 December 2018; 20 days ago (2018-12-23)[34]
+"iOS, Telegram X",5.0.17 / 13 November 2018; 60 days ago (2018-11-13)[35]
 Windows Phone,3.4.0 / 12 October 2018; 2 months ago (2018-10-12)[36]
-"Windows, macOS, Linux",1.5.4 / 27 December 2018; 15 days ago (2018-12-27)[37]
-macOS (Mac App Store version),4.8 / 29 December 2018; 13 days ago (2018-12-29)[38]
+"Windows, macOS, Linux",1.5.4 / 27 December 2018; 16 days ago (2018-12-27)[37]
+macOS (Mac App Store version),4.8 / 29 December 2018; 14 days ago (2018-12-29)[38]
 Tencent QQ,Tencent Holdings,1999-02,Single-protocol,See current releases,Adware
 TextSecure,Open Whisper Systems,2010-05,Single-protocol,Discontinued (merged with RedPhone to become Signal),GPLv3
 Threema,Threema GmbH,2012-12,Single-protocol,"iOS 3.0.8 (March 20, 2018; 9 months ago (2018-03-20)) [±] [40] Android 3.41 (March 13, 2018; 9 months ago (2018-03-13)) [±] [41] Windows Phone 2.3.0 (May 14, 2018; 7 months ago (2018-05-14)) [±] [42]",Proprietary commercial software
@@ -85,16 +85,16 @@ Trillian,Cerulean Studios,2000-07-01,Multi-protocol,"Windows: 6.1 (build 17) (Se
 Tuenti,Tuenti,2006,Multi-protocol,,Proprietary
 Upptalk,Upptalk,2010,Dual-protocol,"iOS 2.4 (November 26, 2014; 4 years ago (2014-11-26)[43]) [±] Android 2.0.2 (February 12, 2014; 4 years ago (2014-02-12)) [±] Windows Phone 7.x 1.0.1.7 (September 12, 2013; 5 years ago (2013-09-12)) [±] Windows Phone 8.x 1.0.0.4 (September 18, 2013; 5 years ago (2013-09-18)) [±] BlackBerry OS 1.0.1 (May 31, 2013; 5 years ago (2013-05-31)) [±] Kindle Fire 2.0 (December 19, 2013; 5 years ago (2013-12-19)[44]) [±]",Freeware
 Viber,"Talmon Marco, Igor Magazinnik, Sani Maroli and Ofer Smocha",2010-12-02,Single-protocol,"Android: WhatsApp 9.5.0.6 (August 21, 2018; 4 months ago (2018-08-21)[45]) [±] iOS: 8.7.1 (April 21, 2018; 8 months ago (2018-04-21)[46]) [±] Windows Mobile: 6.6.1 (April 26, 2018; 8 months ago (2018-04-26)[47]) [±] BlackBerry 10 OS: 4.3.0.728 (April 23, 2014; 4 years ago (2014-04-23)[48]) [±]",Freemium
-WeChat,iOS,macOS,Android,"Windows 10 Mobile, Windows Phone 8",Symbian V3,Symbian V5,Tencent Holdings,2011-01,Single-protocol,"iOS 6.7.2 / August 10, 2018; 4 months ago (2018-08-10)[49][50] macOS 2.3.13 / May 3, 2018; 8 months ago (2018-05-03)[51] Android 6.7.3 / October 10, 2018; 3 months ago (2018-10-10)[52] Windows 10 Mobile, Windows Phone 8 6.0.8[53] Symbian V3 4.2 / February 4, 2013; 5 years ago (2013-02-04)[54] Symbian V5 4.2 / January 17, 2013; 5 years ago (2013-01-17)[55]","6.7.2 / August 10, 2018; 4 months ago (2018-08-10)[49][50]","2.3.13 / May 3, 2018; 8 months ago (2018-05-03)[51]","6.7.3 / October 10, 2018; 3 months ago (2018-10-10)[52]",6.0.8[53],"4.2 / February 4, 2013; 5 years ago (2013-02-04)[54]","4.2 / January 17, 2013; 5 years ago (2013-01-17)[55]",Freeware
-iOS,"6.7.2 / August 10, 2018; 4 months ago (2018-08-10)[49][50]"
+WeChat,iOS,macOS,Android,"Windows 10 Mobile, Windows Phone 8",Symbian V3,Symbian V5,Tencent Holdings,2011-01,Single-protocol,"iOS 6.7.2 / August 10, 2018; 5 months ago (2018-08-10)[49][50] macOS 2.3.13 / May 3, 2018; 8 months ago (2018-05-03)[51] Android 6.7.3 / October 10, 2018; 3 months ago (2018-10-10)[52] Windows 10 Mobile, Windows Phone 8 6.0.8[53] Symbian V3 4.2 / February 4, 2013; 5 years ago (2013-02-04)[54] Symbian V5 4.2 / January 17, 2013; 5 years ago (2013-01-17)[55]","6.7.2 / August 10, 2018; 5 months ago (2018-08-10)[49][50]","2.3.13 / May 3, 2018; 8 months ago (2018-05-03)[51]","6.7.3 / October 10, 2018; 3 months ago (2018-10-10)[52]",6.0.8[53],"4.2 / February 4, 2013; 5 years ago (2013-02-04)[54]","4.2 / January 17, 2013; 5 years ago (2013-01-17)[55]",Freeware
+iOS,"6.7.2 / August 10, 2018; 5 months ago (2018-08-10)[49][50]"
 macOS,"2.3.13 / May 3, 2018; 8 months ago (2018-05-03)[51]"
 Android,"6.7.3 / October 10, 2018; 3 months ago (2018-10-10)[52]"
 "Windows 10 Mobile, Windows Phone 8",6.0.8[53]
 Symbian V3,"4.2 / February 4, 2013; 5 years ago (2013-02-04)[54]"
 Symbian V5,"4.2 / January 17, 2013; 5 years ago (2013-01-17)[55]"
-WhatsApp,iOS,Android,"Windows Phone 8, Windows 10 Mobile",Symbian,BlackBerry,"Facebook, Inc.",2009-08,Single-protocol,"iOS 8.0.3 / January 7, 2019; 4 days ago (2019-01-07)[56] Android 2.18.380 / December 14, 2018; 28 days ago (2018-12-14)[57] Windows Phone 8, Windows 10 Mobile 2.18.52[58] Symbian 2.16.57[59] BlackBerry 9.3.4 / June 26, 2016; 2 years ago (2016-06-26)[60]","8.0.3 / January 7, 2019; 4 days ago (2019-01-07)[56]","2.18.380 / December 14, 2018; 28 days ago (2018-12-14)[57]",2.18.52[58],2.16.57[59],"9.3.4 / June 26, 2016; 2 years ago (2016-06-26)[60]",Freeware
-iOS,"8.0.3 / January 7, 2019; 4 days ago (2019-01-07)[56]"
-Android,"2.18.380 / December 14, 2018; 28 days ago (2018-12-14)[57]"
+WhatsApp,iOS,Android,"Windows Phone 8, Windows 10 Mobile",Symbian,BlackBerry,"Facebook, Inc.",2009-08,Single-protocol,"iOS 2.19.10 / January 7, 2019; 5 days ago (2019-01-07)[56] Android 2.18.380 / December 14, 2018; 29 days ago (2018-12-14)[57] Windows Phone 8, Windows 10 Mobile 2.18.52[58] Symbian 2.16.57[59] BlackBerry 9.3.4 / June 26, 2016; 2 years ago (2016-06-26)[60]","2.19.10 / January 7, 2019; 5 days ago (2019-01-07)[56]","2.18.380 / December 14, 2018; 29 days ago (2018-12-14)[57]",2.18.52[58],2.16.57[59],"9.3.4 / June 26, 2016; 2 years ago (2016-06-26)[60]",Freeware
+iOS,"2.19.10 / January 7, 2019; 5 days ago (2019-01-07)[56]"
+Android,"2.18.380 / December 14, 2018; 29 days ago (2018-12-14)[57]"
 "Windows Phone 8, Windows 10 Mobile",2.18.52[58]
 Symbian,2.16.57[59]
 BlackBerry,"9.3.4 / June 26, 2016; 2 years ago (2016-06-26)[60]"

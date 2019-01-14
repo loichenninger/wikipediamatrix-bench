@@ -12,6 +12,7 @@ JsDoc Toolkit,Yes,No
 mkd,Yes,No
 Natural Docs,Yes,No
 NDoc,No,Yes
+pdoc,Yes,No
 perldoc,Yes,No
 phpDocumentor,Yes,No
 pydoc,Yes,No

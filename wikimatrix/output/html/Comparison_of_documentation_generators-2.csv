@@ -13,6 +13,7 @@ mkd,Yes,No?,Yes,Yes,Yes
 Natural Docs,Yes,Yes,Yes,Yes,Yes
 NDoc,Yes,No,No,No,No
 Pandoc,Yes,Yes,Yes,Yes,Yes
+pdoc,Yes,Yes,Yes,Yes,Yes
 perldoc,Yes,Yes,Yes,Yes,Yes
 phpDocumentor,Yes,Yes,Yes,Yes,Yes
 pydoc,Yes,Yes,Yes,Yes,Yes

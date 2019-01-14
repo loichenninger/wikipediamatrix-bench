@@ -13,6 +13,7 @@ mkd,Customisable for all type of comments,'as-is' in comments,"all general docum
 Natural Docs,,,,
 NDoc,,,,
 perldoc,Extend the generator classes through Perl programming.,,Only linking,
+pdoc,overridable mako templates,,"source code syntax highlighting, automatic cross-linking to symbol declarations",
 phpDocumentor,Smarty-based templates,class inheritance diagrams,"cross reference to generated documentation, and to php.net function reference",Yes
 pydoc,,,,
 RDoc,,,,
