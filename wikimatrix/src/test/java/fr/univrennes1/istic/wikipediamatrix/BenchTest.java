@@ -114,7 +114,7 @@ public class BenchTest {
 		br.close();	    
 		assertEquals(nurl, 336);
 		System.out.println(nbTableaux);
-		//On compte l'entête apparaissant le plus de fois
+		//On compte l'entête apparaissant le plus de fois et on l'affiche dans la console
 		for (String mot : motsEntete) {
 			int freqCour;
 			freqCour=Collections.frequency(motsEntete, mot);
