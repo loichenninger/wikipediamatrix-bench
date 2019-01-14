@@ -6,19 +6,9 @@ L'objectif de ce projet est de créer un programme permettant à partir d'une li
 ```
 GNU V3
 ``` 
-## Preambule
-Afin d'utiliser l'extracteur il faut tout d'abord installer un éditeur de texte java (exemple Eclipse) et un JEE java.
-
-```
-<https://www.eclipse.org/downloads/>
-``` 
-Lors de l'installation d'Eclipse, ce dernier propose directement d'installer un JEE.
-
 ## Executer
 
-Importer le dossier **wikimatrix** et se rendre dans la classe **mvnTest**.
-
-Il faut ensuite ce rendre dans la classe **BenchTest** et l’exécuter, les résultats se trouveront dans le fichier **output**.
+Importer le dossier **wikimatrix** et se rendre dans la classe **BenchTest**. Il faut ensuite l’exécuter, les résultats se trouveront dans le fichier **output**.
 
 Pour extraire d'autres urls, il faut modifier le fichier **wikiurls.txt** en ajoutant les urls à la liste. 
 
@@ -52,7 +42,7 @@ Ajouter les dépendances suivantes dans le fichier pom.xml qui gère les dépend
 
 
 
-## Le diagramme de classe :
+## Diagramme de classe :
 
 ![Ci dessus le diagramme de classe de cette application](https://github.com/loichenninger/wikipediamatrix-bench/blob/master/diagUML.png?raw=true "Title")
 
